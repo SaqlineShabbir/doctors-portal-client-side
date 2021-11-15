@@ -1,0 +1,19 @@
+.exceptional-container{
+    display: flex;
+    padding: 100px;
+}
+
+.exceptional-container img{
+    height:500px;
+    width: 500px;
+}
+
+.exceptional-texts{
+    margin-inline:50px;
+    margin-top:30px;
+}
+
+
+.exceptional-texts p{
+    line-height: 30px;
+}

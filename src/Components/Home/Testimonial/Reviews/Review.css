@@ -1,0 +1,32 @@
+.reviews-container{
+    
+    margin: 100px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+   .hello{
+    width:100px;
+    height:100px;
+    display:flex;
+    justify-content:center;
+    
+    color:red;
+    margin-left: 750px;
+    }
+
+@media only screen and (max-width:688px){
+
+    .reviews-container{
+    
+        margin: 0px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .reviews-main h3{
+        margin: 100px;
+    }
+    .hello{
+        
+        display:none;
+        }
+}

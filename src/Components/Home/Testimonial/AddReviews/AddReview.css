@@ -1,0 +1,27 @@
+.AddReview{
+    height:90vh;
+    margin-top: 90px;
+  }
+  
+  
+  .AddReview form{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    padding:10px;
+  }
+  
+  .AddReview form input,textarea{
+      width:40%;
+      padding: 10px;
+      margin:5px
+  }
+  
+  @media only screen and (max-width:688px){
+    .AddReview form input,textarea{
+      width:90%;
+      padding: 10px;
+      margin:5px
+  }
+  }

@@ -1,0 +1,22 @@
+.footer-container{
+    display: flex;
+   justify-content: center;
+
+   background-repeat: no-repeat;
+   background-size: auto;
+
+   background: url(../../../images/footer-bg.png) no-repeat center center ;
+ background-size: cover;
+}
+
+.footer-texts{
+    margin-block: 150px;
+    margin-inline: 60px;
+}
+
+.footer-focused{
+    margin-top:200px;
+}
+.footer-texts h5{
+    margin-bottom: 35px;
+}

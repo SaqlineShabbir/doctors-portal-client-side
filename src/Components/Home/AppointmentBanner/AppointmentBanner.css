@@ -1,0 +1,24 @@
+.appointment-banner-container{
+    display: flex;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: auto;
+
+    background: url(../../../images/appointment-bg.png) no-repeat center center ;
+  background-size: cover;
+  background-color:rgba(0, 0, 0, 0.945);
+  background-blend-mode: darken, luminosity;
+  height:65vh;
+  margin-top: 50px;
+}
+
+.appointment-banner-img img{
+        height:670px;
+        width:600px;
+        position:relative;
+        bottom:130px;
+}
+.appointment-banner-texts{
+    padding:170px;
+    color:white
+}
