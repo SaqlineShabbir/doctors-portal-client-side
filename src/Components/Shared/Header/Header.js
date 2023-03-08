@@ -14,20 +14,20 @@ const Header = () => {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto ">
             <Nav.Link as={Link} className=" fw-bold" to="/home">Home</Nav.Link>
-            <Nav.Link as={Link} className=" fw-bold mx-3" to="/login">Log In</Nav.Link>
+           {!user.email && <Nav.Link as={Link} className=" fw-bold mx-3" to="/login">Log In</Nav.Link>}
             <Nav.Link as={Link} className=" fw-bold mx-3" to="/appointment">Appointment</Nav.Link>
             <Nav.Link as={Link} className=" fw-bold" to="/dashboard">Dash Board</Nav.Link>
            
             { 
               user.email?
-              <Link to="/signup">   <button onClick={logOut} className="signup-button ">Log Out</button></Link>
+              <Link to="/register">   <button onClick={logOut} className="signup-button ">Log Out</button></Link>
               :
-            <Link to="/signup">   <button className="signup-button ">Sign Up</button></Link>
+            <Link to="/register">   <button className="signup-button ">Sign Up</button></Link>
            }
            { user.email &&
                <div className="d-flex user">
                <img className="bg-white" src={user?.photoURL} alt="" />
-               <p className="mt-1 ms-2 text-white">{user?.displayName}</p>
+               <p className="mt-1 ms-2 ">{user?.displayName}</p>
                </div>
            }
           </Nav>

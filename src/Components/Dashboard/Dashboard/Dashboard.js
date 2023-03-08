@@ -35,6 +35,7 @@ import MakeAdmin from '../MakeAdmin/MakeAdmin';
 import AddDoctor from '../AddDoctor/AddDoctor';
 import AdminRoute from '../../Login/AdminRoute/AdminRoute';
 import AddReview from '../../Home/Testimonial/AddReviews/AddReviews';
+import Payment from '../Payment/Payment';
 
 
 const drawerWidth = 240;
@@ -152,6 +153,9 @@ const {admin} = useAuth();
         <Switch>
         <Route exact path={path}>
           <DashboardHome></DashboardHome>
+        </Route>
+        <Route  path={`${path}/payment/:appointmentId`}>
+        <Payment></Payment>
         </Route>
         <AdminRoute path={`${path}/makeAdmin`}>
           <MakeAdmin></MakeAdmin>
